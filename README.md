@@ -131,7 +131,7 @@ To rigorously evaluate out-of-sample pricing capability (rather than relying on 
 | **OOS-Maturity (Term-Structure Test)** | Held-out ATM Caps (`1Y, 3Y, 4Y, 7Y, 15Y, 20Y`) | **No** | Tests whether 2 constant parameters generalize across the volatility term structure. |
 | **OOS-Strike (Moneyness / Smile Test)** | ITM & OTM Caps and Floors across maturities | **No** | Tests Gaussian short-rate dynamics against market volatility skew/smile. |
 | **OOS-Instrument *(Optional)*** | European SOFR Swaptions (if exported from `VCUB`) | **No** | Tests cross-instrument generalization (Jamshidian $r^*$ / tree vs. Market Model). |
-| **Model-Free Parity Set (Sec. 4.3)** | Matched $(K, T_N)$ Cap–Floor pairs | **No** | Computes $\varepsilon = \text{Cap}(K)_{\text{mkt}} - \text{Floor}(K)_{\text{mkt}} - \text{PayerSwap}(K)_{\text{mkt}}$. *(ATM Floors are not used alone as an OOS test because parity algebraically links them to ATM Caps.)* |
+| **Model-Free Parity Set (Sec. 4.3)** | Matched $(K, T_N)$ Cap–Floor pairs | **No** | Computes $\varepsilon = \text{Cap}(K)_{\text{mkt}} - \text{Floor}(K)_{\text{mkt}} - \text{PayerSwap}(K)_{\text{mkt}}$  *(ATM Floors are not used alone as an OOS test because parity algebraically links them to ATM Caps.)* |
 
 ---
 
