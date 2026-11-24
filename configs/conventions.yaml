@@ -1,0 +1,29 @@
+valuation_date: "2026-09-30"
+history_start: "2023-07-03"
+history_end: "2026-09-30"
+swap_accrual_dt: 1.0
+capfloor_accrual_dt: 0.25
+vcub_vol_type: "normal"
+rate_units: "decimal"
+
+hull_white:
+  kappa_bounds: [0.001, 2.0]
+  sigma_bounds: [0.000001, 0.05]
+
+option_split:
+  calibration:
+    option_type: "cap"
+    moneyness: "ATM"
+    maturities: [2.0, 5.0, 10.0]
+  oos_term_structure:
+    option_type: "cap"
+    moneyness: "ATM"
+    maturities: [1.0, 3.0, 4.0, 7.0, 15.0, 20.0]
+  oos_moneyness:
+    moneyness: ["ITM", "OTM"]
+    option_types: ["cap", "floor"]
+    maturities: [1.0, 2.0, 3.0, 5.0, 7.0, 10.0]
+  oos_swaptions:
+    enabled: false
+  parity:
+    require_matched_cap_floor_pairs: true

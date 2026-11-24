@@ -1,0 +1,12 @@
+# Consumers request review from the owners of the components they depend on.
+/src/sofr_hw/data/ @oliver-github
+/src/sofr_hw/curves/ @oliver-github
+/src/sofr_hw/pricing/instruments.py @oliver-github
+/src/sofr_hw/pricing/market_quotes.py @sean-github
+/src/sofr_hw/pricing/parity.py @sean-github
+/src/sofr_hw/models/ @sean-github
+/src/sofr_hw/pca/ @nicholas-github
+/src/sofr_hw/reporting/ @nicholas-github
+/src/sofr_hw/interfaces.py @oliver-github @nicholas-github @sean-github
+/src/sofr_hw/pricing/dataset_split.py @nicholas-github @sean-github
+/pipelines/ @oliver-github @nicholas-github @sean-github
