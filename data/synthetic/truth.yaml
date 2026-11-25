@@ -1,0 +1,54 @@
+WARNING: SYNTHETIC DATA - for development and testing only, never for report results
+units: decimals unless the column name says pct or bp
+n_trading_days: 813
+seed: 4821
+history_start: '2023-07-03'
+valuation_date: '2026-09-30'
+ns_tau: 2.0
+ns_start:
+- 0.036
+- 0.017
+- -0.012
+ns_end:
+- 0.041
+- -0.007
+- -0.004
+ns_daily_vol:
+- 0.0003
+- 0.0004
+- 0.0007
+ns_corr:
+- -0.4
+- 0.0
+- 0.2
+ns_reversion_days: 60.0
+zero_noise_bp: 0.4
+hw_kappa: 0.03
+hw_sigma: 0.0085
+capfloor_accrual_dt: 0.25
+smile_convexity: 0.1
+smile_skew: -0.04
+atm_hump_bp: 0.0
+vol_noise_bp: 0.0
+maturities:
+- 1.0
+- 2.0
+- 3.0
+- 4.0
+- 5.0
+- 6.0
+- 7.0
+- 8.0
+- 9.0
+- 10.0
+- 12.0
+- 15.0
+- 20.0
+- 25.0
+- 30.0
+strike_offsets_bp:
+- -100
+- -50
+- 0
+- 50
+- 100

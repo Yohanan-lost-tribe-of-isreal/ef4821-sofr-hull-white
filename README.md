@@ -211,6 +211,9 @@ pip install -e ".[dev]"
 ruff check .
 pytest -v
 
+# 2b. (Re)generate the synthetic Bloomberg-shaped dataset in data/synthetic/ (dev only, see its README)
+python pipelines/make_synthetic_data.py
+
 # 3. Run full pipeline end-to-end (use --mode mock before DATASOURCE CSVs are placed in data/raw/)
 python pipelines/run_all.py --mode mock
 python pipelines/run_all.py --mode [e.g.bloomberg]
